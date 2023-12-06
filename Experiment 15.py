@@ -1,3 +1,4 @@
+# AIM:CREATE A PYTHON PROGRAM TO IMPLEMENT MORSE TRASLATOR
 MORSE_CODE_DICT = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 
     'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.', 
@@ -19,7 +20,7 @@ def text_to_morse(text):
     return morse_code
 
 def morse_to_text(morse_code):
-    morse_code += ' '  # Adding extra space to correctly separate the last Morse code
+    morse_code += ' '
     text = ''
     morse_char = ''
     for char in morse_code:
