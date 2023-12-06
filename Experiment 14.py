@@ -1,13 +1,13 @@
+# AIM: Create a text file "MYFILE.TXT" in python and ask the user to write separate 3 lines with three input statements from the user.
+
 def main():
     file_name = "MYFILE.TXT"
 
-    # Ask the user to enter three lines
     lines = []
     for i in range(3):
         line = input(f"Enter line {i + 1}: ")
         lines.append(line)
 
-    # Write the entered lines to the file
     try:
         with open(file_name, 'w') as file:
             for line in lines:
